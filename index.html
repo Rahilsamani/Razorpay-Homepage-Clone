@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Razorpay</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="h-screen overflow-x-hidden overflow-y-auto w-full relative">
+      <!-- CTA Banner -->
+      <div class="w-full h-[52px] bg-white relative overflow-hidden">
+        <!-- left skewed div -->
+        <div
+          class="bg-lightBlue w-10 h-full skew-x-[38deg] absolute -left-5 z-[10]"
+        ></div>
+        <div
+          class="bg-[#C4DDF9] w-2 h-full skew-x-[38deg] absolute left-5 z-[12]"
+        ></div>
+        <div
+          class="bg-[#E7F1FD] w-[120px] h-full skew-x-[38deg] absolute left-7 z-[14]"
+        ></div>
+        <div
+          class="bg-[#F3F8FE] w-[140px] h-full skew-x-[38deg] absolute left-[9rem] z-[16]"
+        ></div>
+
+        <!-- content part -->
+        <div
+          class="absolute top-1/2 left-1/2 z-[1000] w-full -translate-x-1/2 -translate-y-1/2 flex justify-center items-center space-x-4"
+        >
+          <p class="hidden lg:block font-mullish">
+            RazorpayX Payroll: 3 Clicks, Payroll Fixed! Automate payroll now!
+          </p>
+          <button
+            class="py-[10px] px-4 bg-lightBlue text-white font-mullish font-bold text-xs rounded-md"
+          >
+            Know More
+          </button>
+        </div>
+
+        <!-- right skewed part -->
+        <div
+          class="bg-lightBlue w-10 h-full skew-x-[38deg] absolute -right-5 z-[10]"
+        ></div>
+        <div
+          class="bg-[#C4DDF9] w-2 h-full skew-x-[38deg] absolute right-5 z-[12]"
+        ></div>
+        <div
+          class="bg-[#E7F1FD] w-[120px] h-full skew-x-[38deg] absolute right-7 z-[14]"
+        ></div>
+        <div
+          class="bg-[#F3F8FE] w-[140px] h-full skew-x-[38deg] absolute right-[9rem] z-[16]"
+        ></div>
+      </div>
+
+      <!--Navbar-->
+      <nav class="bg-deepBlue">
+        <div
+          class="relative w-[1080px] mx-auto flex items-center justify-between"
+        >
+          <!-- logo -->
+          <a href="/" class="cursor-pointer py-7 pr-7">
+            <img src="./images/logo.svg" width="125px" height="30px" />
+          </a>
+
+          <ul class="flex space-x-6 invisible lg:visible">
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Payments</a>
+
+              <div
+                class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"
+              ></div>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Banking</a>
+
+              <div
+                class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"
+              ></div>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Corporate Card</a>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Payroll</a>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Resources</a>
+
+              <div
+                class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"
+              ></div>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Support</a>
+
+              <div
+                class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"
+              ></div>
+            </li>
+
+            <li
+              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            >
+              <a href="#">Pricing</a>
+
+              <div
+                class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"
+              ></div>
+            </li>
+          </ul>
+
+          <div class="flex space-x-6">
+            <img
+              src="./images/india-flag.svg"
+              width="28px"
+              height="20px"
+              class="invisible lg:visible"
+            />
+            <button
+              class="py-3 px-5 font-mullish text-white border-lightBlue border rounded-sm text-sm font-bold"
+            >
+              Log in
+            </button>
+            <button
+              class="py-3 px-4 font-mullish rounded-sm text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 flex invisible lg:visible"
+            >
+              Sign Up
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="w-[14px] h-[14px] ml-3"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
