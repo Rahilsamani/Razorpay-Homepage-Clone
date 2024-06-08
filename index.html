@@ -8,6 +8,63 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Razorpay</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <style>
+      .card:hover .card-icon {
+        background-image: linear-gradient(
+          30.55deg,
+          #6ac7ff 11.05%,
+          #148aff 90.09%
+        );
+        box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+      }
+
+      .card:hover .card-shape {
+        filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+        stroke-opacity: 0 !important;
+      }
+
+      .card2:hover .card-icon {
+        background-image: linear-gradient(
+          188.57deg,
+          #2095ff -16.05%,
+          #6416ff 116.32%
+        );
+        box-shadow: 0px 2px 24px rgb(0 0 0 / 40%);
+        transition: all 200ms ease-in-out;
+      }
+
+      .card2:hover .card-shape2 {
+        filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+        stroke-opacity: 0 !important;
+      }
+
+      .newFeatureCard {
+        box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+      }
+
+      .corefeaturesection {
+        background-size: 100% 100%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+
+      .companiesList {
+        animation: 10s infinite linear moveCompany;
+      }
+
+      .ctaSection {
+        background-size: 100% 100%;
+      }
+
+      @keyframes moveCompany {
+        0% {
+          top: 0;
+        }
+        100% {
+          top: -50%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="h-screen overflow-x-hidden overflow-y-auto w-full relative">
@@ -1069,7 +1126,7 @@
             </div>
             <!-- demo box -->
             <div
-              class="w-full items-center justify-evenly border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8 hidden md:flex md:flex-col lg:flex lg:flex-row md:block lg:block"
+              class="w-full items-center justify-evenly border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8 hidden md:flex md:flex-col lg:flex lg:flex-row"
             >
               <p class="font-mullish text-white text-xl">
                 Check out the live demo to learn how RazorpayX works.
