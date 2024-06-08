@@ -1,5 +1,31 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.hide {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transition: all 1s;
+  animation: fade-in-scroll-animation 0.6s ease-in-out 50ms 1 normal forwards;
+}
+
+@keyframes fade-in-scroll-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

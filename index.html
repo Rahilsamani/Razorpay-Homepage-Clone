@@ -260,7 +260,7 @@
       </section>
 
       <!--feature section - 1-->
-      <section class="relative mt-[190px] overflow-hidden">
+      <section class="hide relative mt-[190px] overflow-hidden">
         <img
           src="./images/feature-section1-dottedrows.png"
           alt=""
@@ -815,7 +815,7 @@
 
       <!-- feature section 2-->
       <section
-        class="bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]"
+        class="hide bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]"
       >
         <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4">
           <h2
@@ -1158,7 +1158,7 @@
       </section>
 
       <!-- new features -->
-      <section class="bg-white relative">
+      <section class="hide bg-white relative">
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <img
             src="images/feature-section1-dottedrows.png"
@@ -1329,7 +1329,7 @@
 
       <!-- core features -->
       <section
-        class="w-full bg-[url(images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection"
+        class="hide w-full bg-[url(images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection"
       >
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <h2
@@ -1459,7 +1459,7 @@
       </section>
 
       <!-- join razorpay section -->
-      <section class="bg-[#F5F8FE] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+      <section class="hide bg-[#F5F8FE] relative pt-40 pb-12 -mt-[200px] -z-[100]">
         <div
           class="w-11/12 max-w-[1080px] mx-auto relative pt-4 flex flex-col md:flex-row sm-my-16"
         >
@@ -1503,7 +1503,7 @@
       </section>
 
       <!-- Testimonial Section -->
-      <section class="relative">
+      <section class="hide relative">
         <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
           <img
             src="images/feature-section1-dottedrows.png"
@@ -1613,7 +1613,7 @@
 
       <!-- CTA -->
       <section
-        class="bg-[url(images/CTAbg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
+        class="hide bg-[url(images/CTAbg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
       >
         <!-- main content box -->
         <div
@@ -2264,6 +2264,18 @@
     <script>
       // All elements that have a data-feather attribute will be replaced with SVG markup corresponding to their data-feather attribute value.
       feather.replace();
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.target.classList.contains('hide')) {
+            entry.target.classList.add('show');
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll('.hide');
+
+      hiddenElements.forEach((el) => observer.observe(el));
     </script>
   </body>
 </html>
