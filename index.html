@@ -54,6 +54,7 @@
 
       .ctaSection {
         background-size: 100% 100%;
+        background-image: url(images/CTABg.svg);
       }
 
       @keyframes moveCompany {
@@ -1596,7 +1597,7 @@
 
       <!-- CTA -->
       <section
-        class="hide bg-[url(images/CTAbg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
+        class="hide w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
       >
         <!-- main content box -->
         <div
@@ -2249,13 +2250,13 @@
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.target.classList.contains('hide')) {
-            entry.target.classList.add('show');
+          if (entry.isIntersecting && entry.target.classList.contains("hide")) {
+            entry.target.classList.add("show");
           }
         });
       });
 
-      const hiddenElements = document.querySelectorAll('.hide');
+      const hiddenElements = document.querySelectorAll(".hide");
 
       hiddenElements.forEach((el) => observer.observe(el));
     </script>
